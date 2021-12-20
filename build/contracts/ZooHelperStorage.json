@@ -1,0 +1,569 @@
+{
+  "contractName": "ZooHelperStorage",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "nftFactory",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "safari",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "zooFarming",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "zooHarmony",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "zooPair",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"nftFactory\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"safari\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"zooFarming\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"zooHarmony\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"zooPair\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/helper/ZooHelperStorage.sol\":\"ZooHelperStorage\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/helper/ZooHelperStorage.sol\":{\"keccak256\":\"0x2bbac482babc3e458aae30fc2863f1bc9372db50a69c5bc7b2efb9953f4e5bf9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://9c571695eee6f334e042a57cc514080937fefa8ad46de2f702603371f5960f48\",\"dweb:/ipfs/QmY7tg99WGfxq6FAiuiGwL33tsACntzAS2LM7FSitSh7US\"]},\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c\",\"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610110806100206000396000f3fe6080604052348015600f57600080fd5b506004361060505760003560e01c80635d15887a14605557806369e02d411460775780636c928e9e14607d578063a7e18cfc146083578063d63843cd146089575b600080fd5b605b608f565b604080516001600160a01b039092168252519081900360200190f35b605b609e565b605b60ad565b605b60bc565b605b60cb565b6004546001600160a01b031681565b6001546001600160a01b031681565b6000546001600160a01b031681565b6002546001600160a01b031681565b6003546001600160a01b03168156fea26469706673582212203b9883537c3dae2bc53026d5be7489db8835a08a00e2a43b7919485ed1509ba964736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060505760003560e01c80635d15887a14605557806369e02d411460775780636c928e9e14607d578063a7e18cfc146083578063d63843cd146089575b600080fd5b605b608f565b604080516001600160a01b039092168252519081900360200190f35b605b609e565b605b60ad565b605b60bc565b605b60cb565b6004546001600160a01b031681565b6001546001600160a01b031681565b6000546001600160a01b031681565b6002546001600160a01b031681565b6003546001600160a01b03168156fea26469706673582212203b9883537c3dae2bc53026d5be7489db8835a08a00e2a43b7919485ed1509ba964736f6c634300060c0033",
+  "immutableReferences": {},
+  "sourceMap": "110:210:13:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "110:210:13:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;296:21;;;:::i;:::-;;;;-1:-1:-1;;;;;296:21:13;;;;;;;;;;;;;;206:25;;;:::i;175:::-;;;:::i;237:22::-;;;:::i;265:25::-;;;:::i;296:21::-;;;-1:-1:-1;;;;;296:21:13;;:::o;206:25::-;;;-1:-1:-1;;;;;206:25:13;;:::o;175:::-;;;-1:-1:-1;;;;;175:25:13;;:::o;237:22::-;;;-1:-1:-1;;;;;237:22:13;;:::o;265:25::-;;;-1:-1:-1;;;;;265:25:13;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity 0.6.12;\n\nimport \"@openzeppelin/contracts/math/SafeMath.sol\";\n\ncontract ZooHelperStorage {\n    using SafeMath for uint256;\n\n    address public zooHarmony;\n    address public zooFarming;\n    address public zooPair;\n    address public nftFactory;\n    address public safari;\n}",
+  "sourcePath": "/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/helper/ZooHelperStorage.sol",
+  "ast": {
+    "absolutePath": "/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/helper/ZooHelperStorage.sol",
+    "exportedSymbols": {
+      "ZooHelperStorage": [
+        7050
+      ]
+    },
+    "id": 7051,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 7035,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:13"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts/math/SafeMath.sol",
+        "file": "@openzeppelin/contracts/math/SafeMath.sol",
+        "id": 7036,
+        "nodeType": "ImportDirective",
+        "scope": 7051,
+        "sourceUnit": 9137,
+        "src": "57:51:13",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 7050,
+        "linearizedBaseContracts": [
+          7050
+        ],
+        "name": "ZooHelperStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 7039,
+            "libraryName": {
+              "contractScope": null,
+              "id": 7037,
+              "name": "SafeMath",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 9136,
+              "src": "148:8:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeMath_$9136",
+                "typeString": "library SafeMath"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "142:27:13",
+            "typeName": {
+              "id": 7038,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "161:7:13",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "constant": false,
+            "functionSelector": "6c928e9e",
+            "id": 7041,
+            "mutability": "mutable",
+            "name": "zooHarmony",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 7050,
+            "src": "175:25:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 7040,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "175:7:13",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "69e02d41",
+            "id": 7043,
+            "mutability": "mutable",
+            "name": "zooFarming",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 7050,
+            "src": "206:25:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 7042,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "206:7:13",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "a7e18cfc",
+            "id": 7045,
+            "mutability": "mutable",
+            "name": "zooPair",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 7050,
+            "src": "237:22:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 7044,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "237:7:13",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "d63843cd",
+            "id": 7047,
+            "mutability": "mutable",
+            "name": "nftFactory",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 7050,
+            "src": "265:25:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 7046,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "265:7:13",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "5d15887a",
+            "id": 7049,
+            "mutability": "mutable",
+            "name": "safari",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 7050,
+            "src": "296:21:13",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 7048,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "296:7:13",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 7051,
+        "src": "110:210:13"
+      }
+    ],
+    "src": "32:288:13"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/helper/ZooHelperStorage.sol",
+      "exportedSymbols": {
+        "ZooHelperStorage": [
+          7050
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 7035,
+        "name": "PragmaDirective",
+        "src": "32:23:13"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 9137,
+          "absolutePath": "@openzeppelin/contracts/math/SafeMath.sol",
+          "file": "@openzeppelin/contracts/math/SafeMath.sol",
+          "scope": 7051,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 7036,
+        "name": "ImportDirective",
+        "src": "57:51:13"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            7050
+          ],
+          "name": "ZooHelperStorage",
+          "scope": 7051
+        },
+        "children": [
+          {
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "SafeMath",
+                  "referencedDeclaration": 9136,
+                  "type": "library SafeMath"
+                },
+                "id": 7037,
+                "name": "UserDefinedTypeName",
+                "src": "148:8:13"
+              },
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 7038,
+                "name": "ElementaryTypeName",
+                "src": "161:7:13"
+              }
+            ],
+            "id": 7039,
+            "name": "UsingForDirective",
+            "src": "142:27:13"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "6c928e9e",
+              "mutability": "mutable",
+              "name": "zooHarmony",
+              "overrides": null,
+              "scope": 7050,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 7040,
+                "name": "ElementaryTypeName",
+                "src": "175:7:13"
+              }
+            ],
+            "id": 7041,
+            "name": "VariableDeclaration",
+            "src": "175:25:13"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "69e02d41",
+              "mutability": "mutable",
+              "name": "zooFarming",
+              "overrides": null,
+              "scope": 7050,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 7042,
+                "name": "ElementaryTypeName",
+                "src": "206:7:13"
+              }
+            ],
+            "id": 7043,
+            "name": "VariableDeclaration",
+            "src": "206:25:13"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "a7e18cfc",
+              "mutability": "mutable",
+              "name": "zooPair",
+              "overrides": null,
+              "scope": 7050,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 7044,
+                "name": "ElementaryTypeName",
+                "src": "237:7:13"
+              }
+            ],
+            "id": 7045,
+            "name": "VariableDeclaration",
+            "src": "237:22:13"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "d63843cd",
+              "mutability": "mutable",
+              "name": "nftFactory",
+              "overrides": null,
+              "scope": 7050,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 7046,
+                "name": "ElementaryTypeName",
+                "src": "265:7:13"
+              }
+            ],
+            "id": 7047,
+            "name": "VariableDeclaration",
+            "src": "265:25:13"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "5d15887a",
+              "mutability": "mutable",
+              "name": "safari",
+              "overrides": null,
+              "scope": 7050,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 7048,
+                "name": "ElementaryTypeName",
+                "src": "296:7:13"
+              }
+            ],
+            "id": 7049,
+            "name": "VariableDeclaration",
+            "src": "296:21:13"
+          }
+        ],
+        "id": 7050,
+        "name": "ContractDefinition",
+        "src": "110:210:13"
+      }
+    ],
+    "id": 7051,
+    "name": "SourceUnit",
+    "src": "32:288:13"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-12-10T08:12:26.216Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

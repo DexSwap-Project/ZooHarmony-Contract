@@ -1,0 +1,925 @@
+{
+  "contractName": "BoostingStorage",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "NFTAddress",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "baseBoost",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "increaseBoost",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "maxLockDays",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "minLockDays",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "userInfo",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "startTime",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "lockTime",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"NFTAddress\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"baseBoost\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"increaseBoost\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"maxLockDays\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"minLockDays\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"userInfo\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"startTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"lockTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/Boosting/BoostingStorage.sol\":\"BoostingStorage\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/Boosting/BoostingStorage.sol\":{\"keccak256\":\"0x2148de1e54703b7de96a2b071a5388b563b3174e4abbc9c9bcb871c13b6dbbda\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://10b89162b908903b9ef4cbe73c3b0e711126b0360ef477fcc048f45e2a27641e\",\"dweb:/ipfs/QmdfDJew8JMouvLoGg5G31cwhhK9ZTtRKzXnhkNqZE2TsX\"]},\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c\",\"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061018c806100206000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c8063310c87cc1461006757806393f1a40b1461008b578063d781ab6c146100d5578063db99a530146100ef578063eb6c6fa9146100f7578063eceae7c3146100ff575b600080fd5b61006f610107565b604080516001600160a01b039092168252519081900360200190f35b6100b7600480360360408110156100a157600080fd5b50803590602001356001600160a01b0316610116565b60408051938452602084019290925282820152519081900360600190f35b6100dd61013e565b60408051918252519081900360200190f35b6100dd610144565b6100dd61014a565b6100dd610150565b6000546001600160a01b031681565b6001602081815260009384526040808520909152918352912080549181015460029091015483565b60045481565b60055481565b60035481565b6002548156fea26469706673582212206564ab4dea0d9e3f94e6024c513f8812396ece2ac1dfd418b520c3dcd19501cc64736f6c634300060c0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c8063310c87cc1461006757806393f1a40b1461008b578063d781ab6c146100d5578063db99a530146100ef578063eb6c6fa9146100f7578063eceae7c3146100ff575b600080fd5b61006f610107565b604080516001600160a01b039092168252519081900360200190f35b6100b7600480360360408110156100a157600080fd5b50803590602001356001600160a01b0316610116565b60408051938452602084019290925282820152519081900360600190f35b6100dd61013e565b60408051918252519081900360200190f35b6100dd610144565b6100dd61014a565b6100dd610150565b6000546001600160a01b031681565b6001602081815260009384526040808520909152918352912080549181015460029091015483565b60045481565b60055481565b60035481565b6002548156fea26469706673582212206564ab4dea0d9e3f94e6024c513f8812396ece2ac1dfd418b520c3dcd19501cc64736f6c634300060c0033",
+  "immutableReferences": {},
+  "sourceMap": "110:507:1:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "110:507:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;369:25;;;:::i;:::-;;;;-1:-1:-1;;;;;369:25:1;;;;;;;;;;;;;;431:63;;;;;;;;;;;;;;;;-1:-1:-1;431:63:1;;;;;;-1:-1:-1;;;;;431:63:1;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;561:21;;;:::i;:::-;;;;;;;;;;;;;;;;589:25;;;:::i;531:23::-;;;:::i;501:::-;;;:::i;369:25::-;;;-1:-1:-1;;;;;369:25:1;;:::o;431:63::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;561:21::-;;;;:::o;589:25::-;;;;:::o;531:23::-;;;;:::o;501:::-;;;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity 0.6.12;\n\nimport \"@openzeppelin/contracts/math/SafeMath.sol\";\n\ncontract BoostingStorage {\n    using SafeMath for uint256;\n\n    // Info of each user.\n    struct UserInfo {\n        uint256 startTime;\n        uint256 lockTime;\n        // Staked NFT Information\n        uint256 tokenId;\n    }\n\n    // NFT contract address\n    address public NFTAddress;\n\n    // storage all users info\n    mapping (uint => mapping (address => UserInfo)) public userInfo;\n\n    uint public minLockDays;\n\n    uint public maxLockDays;\n\n    uint public baseBoost;\n\n    uint public increaseBoost;\n}\n",
+  "sourcePath": "/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/Boosting/BoostingStorage.sol",
+  "ast": {
+    "absolutePath": "/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/Boosting/BoostingStorage.sol",
+    "exportedSymbols": {
+      "BoostingStorage": [
+        550
+      ]
+    },
+    "id": 551,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 522,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:1"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts/math/SafeMath.sol",
+        "file": "@openzeppelin/contracts/math/SafeMath.sol",
+        "id": 523,
+        "nodeType": "ImportDirective",
+        "scope": 551,
+        "sourceUnit": 9137,
+        "src": "57:51:1",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 550,
+        "linearizedBaseContracts": [
+          550
+        ],
+        "name": "BoostingStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 526,
+            "libraryName": {
+              "contractScope": null,
+              "id": 524,
+              "name": "SafeMath",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 9136,
+              "src": "147:8:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeMath_$9136",
+                "typeString": "library SafeMath"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "141:27:1",
+            "typeName": {
+              "id": 525,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "160:7:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "canonicalName": "BoostingStorage.UserInfo",
+            "id": 533,
+            "members": [
+              {
+                "constant": false,
+                "id": 528,
+                "mutability": "mutable",
+                "name": "startTime",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 533,
+                "src": "226:17:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 527,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "226:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 530,
+                "mutability": "mutable",
+                "name": "lockTime",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 533,
+                "src": "253:16:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 529,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "253:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 532,
+                "mutability": "mutable",
+                "name": "tokenId",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 533,
+                "src": "313:15:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 531,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "313:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "UserInfo",
+            "nodeType": "StructDefinition",
+            "scope": 550,
+            "src": "200:135:1",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "310c87cc",
+            "id": 535,
+            "mutability": "mutable",
+            "name": "NFTAddress",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 550,
+            "src": "369:25:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 534,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "369:7:1",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "93f1a40b",
+            "id": 541,
+            "mutability": "mutable",
+            "name": "userInfo",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 550,
+            "src": "431:63:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_mapping$_t_address_$_t_struct$_UserInfo_$533_storage_$_$",
+              "typeString": "mapping(uint256 => mapping(address => struct BoostingStorage.UserInfo))"
+            },
+            "typeName": {
+              "id": 540,
+              "keyType": {
+                "id": 536,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "440:4:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "431:47:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_mapping$_t_address_$_t_struct$_UserInfo_$533_storage_$_$",
+                "typeString": "mapping(uint256 => mapping(address => struct BoostingStorage.UserInfo))"
+              },
+              "valueType": {
+                "id": 539,
+                "keyType": {
+                  "id": 537,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "457:7:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "nodeType": "Mapping",
+                "src": "448:29:1",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_mapping$_t_address_$_t_struct$_UserInfo_$533_storage_$",
+                  "typeString": "mapping(address => struct BoostingStorage.UserInfo)"
+                },
+                "valueType": {
+                  "contractScope": null,
+                  "id": 538,
+                  "name": "UserInfo",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 533,
+                  "src": "468:8:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_UserInfo_$533_storage_ptr",
+                    "typeString": "struct BoostingStorage.UserInfo"
+                  }
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "eceae7c3",
+            "id": 543,
+            "mutability": "mutable",
+            "name": "minLockDays",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 550,
+            "src": "501:23:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 542,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "501:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "eb6c6fa9",
+            "id": 545,
+            "mutability": "mutable",
+            "name": "maxLockDays",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 550,
+            "src": "531:23:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 544,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "531:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "d781ab6c",
+            "id": 547,
+            "mutability": "mutable",
+            "name": "baseBoost",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 550,
+            "src": "561:21:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 546,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "561:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "db99a530",
+            "id": 549,
+            "mutability": "mutable",
+            "name": "increaseBoost",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 550,
+            "src": "589:25:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 548,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "589:4:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 551,
+        "src": "110:507:1"
+      }
+    ],
+    "src": "32:586:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/Boosting/BoostingStorage.sol",
+      "exportedSymbols": {
+        "BoostingStorage": [
+          550
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 522,
+        "name": "PragmaDirective",
+        "src": "32:23:1"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 9137,
+          "absolutePath": "@openzeppelin/contracts/math/SafeMath.sol",
+          "file": "@openzeppelin/contracts/math/SafeMath.sol",
+          "scope": 551,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 523,
+        "name": "ImportDirective",
+        "src": "57:51:1"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            550
+          ],
+          "name": "BoostingStorage",
+          "scope": 551
+        },
+        "children": [
+          {
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "SafeMath",
+                  "referencedDeclaration": 9136,
+                  "type": "library SafeMath"
+                },
+                "id": 524,
+                "name": "UserDefinedTypeName",
+                "src": "147:8:1"
+              },
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 525,
+                "name": "ElementaryTypeName",
+                "src": "160:7:1"
+              }
+            ],
+            "id": 526,
+            "name": "UsingForDirective",
+            "src": "141:27:1"
+          },
+          {
+            "attributes": {
+              "canonicalName": "BoostingStorage.UserInfo",
+              "name": "UserInfo",
+              "scope": 550,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "startTime",
+                  "overrides": null,
+                  "scope": 533,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 527,
+                    "name": "ElementaryTypeName",
+                    "src": "226:7:1"
+                  }
+                ],
+                "id": 528,
+                "name": "VariableDeclaration",
+                "src": "226:17:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "lockTime",
+                  "overrides": null,
+                  "scope": 533,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 529,
+                    "name": "ElementaryTypeName",
+                    "src": "253:7:1"
+                  }
+                ],
+                "id": 530,
+                "name": "VariableDeclaration",
+                "src": "253:16:1"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "overrides": null,
+                  "scope": 533,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint256",
+                      "type": "uint256"
+                    },
+                    "id": 531,
+                    "name": "ElementaryTypeName",
+                    "src": "313:7:1"
+                  }
+                ],
+                "id": 532,
+                "name": "VariableDeclaration",
+                "src": "313:15:1"
+              }
+            ],
+            "id": 533,
+            "name": "StructDefinition",
+            "src": "200:135:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "310c87cc",
+              "mutability": "mutable",
+              "name": "NFTAddress",
+              "overrides": null,
+              "scope": 550,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 534,
+                "name": "ElementaryTypeName",
+                "src": "369:7:1"
+              }
+            ],
+            "id": 535,
+            "name": "VariableDeclaration",
+            "src": "369:25:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "93f1a40b",
+              "mutability": "mutable",
+              "name": "userInfo",
+              "overrides": null,
+              "scope": 550,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(uint256 => mapping(address => struct BoostingStorage.UserInfo))",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(uint256 => mapping(address => struct BoostingStorage.UserInfo))"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 536,
+                    "name": "ElementaryTypeName",
+                    "src": "440:4:1"
+                  },
+                  {
+                    "attributes": {
+                      "type": "mapping(address => struct BoostingStorage.UserInfo)"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "address",
+                          "type": "address"
+                        },
+                        "id": 537,
+                        "name": "ElementaryTypeName",
+                        "src": "457:7:1"
+                      },
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "UserInfo",
+                          "referencedDeclaration": 533,
+                          "type": "struct BoostingStorage.UserInfo"
+                        },
+                        "id": 538,
+                        "name": "UserDefinedTypeName",
+                        "src": "468:8:1"
+                      }
+                    ],
+                    "id": 539,
+                    "name": "Mapping",
+                    "src": "448:29:1"
+                  }
+                ],
+                "id": 540,
+                "name": "Mapping",
+                "src": "431:47:1"
+              }
+            ],
+            "id": 541,
+            "name": "VariableDeclaration",
+            "src": "431:63:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "eceae7c3",
+              "mutability": "mutable",
+              "name": "minLockDays",
+              "overrides": null,
+              "scope": 550,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 542,
+                "name": "ElementaryTypeName",
+                "src": "501:4:1"
+              }
+            ],
+            "id": 543,
+            "name": "VariableDeclaration",
+            "src": "501:23:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "eb6c6fa9",
+              "mutability": "mutable",
+              "name": "maxLockDays",
+              "overrides": null,
+              "scope": 550,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 544,
+                "name": "ElementaryTypeName",
+                "src": "531:4:1"
+              }
+            ],
+            "id": 545,
+            "name": "VariableDeclaration",
+            "src": "531:23:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "d781ab6c",
+              "mutability": "mutable",
+              "name": "baseBoost",
+              "overrides": null,
+              "scope": 550,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 546,
+                "name": "ElementaryTypeName",
+                "src": "561:4:1"
+              }
+            ],
+            "id": 547,
+            "name": "VariableDeclaration",
+            "src": "561:21:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "db99a530",
+              "mutability": "mutable",
+              "name": "increaseBoost",
+              "overrides": null,
+              "scope": 550,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 548,
+                "name": "ElementaryTypeName",
+                "src": "589:4:1"
+              }
+            ],
+            "id": 549,
+            "name": "VariableDeclaration",
+            "src": "589:25:1"
+          }
+        ],
+        "id": 550,
+        "name": "ContractDefinition",
+        "src": "110:507:1"
+      }
+    ],
+    "id": 551,
+    "name": "SourceUnit",
+    "src": "32:586:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-12-10T08:12:25.588Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

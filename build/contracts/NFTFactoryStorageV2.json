@@ -1,0 +1,807 @@
+{
+  "contractName": "NFTFactoryStorageV2",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "CATEGORY_MASK",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "ITEM_MASK",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "LEVEL_MASK",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "ORACLE_ROLE",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "dynamicMaxPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "dynamicMinPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "dynamicPriceTimeUnit",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "emptyTimes",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "goldenChestPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "lastOrderTimestamp",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "lastPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "maxNFTCategory",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "maxNFTItem",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "maxNFTLevel",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "maxNFTRandom",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "priceDown0",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "priceDown1",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "priceUp0",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "priceUp1",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "stakeInfo",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "lockTime",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "startTime",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "stakeAmount",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "stakePlan",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "priceMul",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "priceDiv",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "lockTime",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "stakePlanCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "stakedAmount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "zooHarmony",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "zooNFT",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"CATEGORY_MASK\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"ITEM_MASK\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"LEVEL_MASK\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"ORACLE_ROLE\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"dynamicMaxPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"dynamicMinPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"dynamicPriceTimeUnit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"emptyTimes\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"goldenChestPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"lastOrderTimestamp\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"lastPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"maxNFTCategory\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"maxNFTItem\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"maxNFTLevel\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"maxNFTRandom\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"priceDown0\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"priceDown1\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"priceUp0\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"priceUp1\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"stakeInfo\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"lockTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"startTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"stakeAmount\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"stakePlan\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"priceMul\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"priceDiv\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"lockTime\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"stakePlanCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"stakedAmount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"zooHarmony\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"zooNFT\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/NFTFactory/NFTFactoryStorageV2.sol\":\"NFTFactoryStorageV2\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/NFTFactory/NFTFactoryStorage.sol\":{\"keccak256\":\"0xa847b3be834b72edfaae3478936fddac3e20b332eda25ea741abd798b9b91510\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d0bfbec27fe2429bbbcddd661172d4b039bc25e91067aa24f1b2de0d30e03756\",\"dweb:/ipfs/QmcFKvKcr9qrHq8mWmYya5LFtLrywZukH8tnBDpv78tAQW\"]},\"/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/NFTFactory/NFTFactoryStorageV2.sol\":{\"keccak256\":\"0x9245037a6b2a724c5c06e94512f2022ce88b182f7a7475ce8fd7cafe266487b9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f12d96d62c98fb6f85cb54dbdc65f49d86bf0b8171f834108a907ca2faf6eed7\",\"dweb:/ipfs/QmeGne6jzzyJ218q31HKdVbXPCztpM5T6y2q4rjiEDE8rd\"]},\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c\",\"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506104ae806100206000396000f3fe608060405234801561001057600080fd5b50600436106101735760003560e01c80635b74ebbb116100de578063a5ca8f2e11610097578063cb2c02fe11610071578063cb2c02fe14610317578063de8e36291461031f578063e5ffad1f14610327578063e6dfae9e1461032f57610173565b8063a5ca8f2e146102e1578063ab0b8b64146102e9578063bf283312146102f157610173565b80635b74ebbb1461029c57806369e26ef5146102a45780636c928e9e146102ac5780636fa09f01146102b457806378f78eb1146102d15780639b50c816146102d957610173565b806347f94a5d1161013057806347f94a5d1461022d57806348d5a04a14610235578063494c0d241461023d578063560178a81461025a57806358fcc6ed146102775780635a459ed41461027f57610173565b80630249aad814610178578063053f14da146101a757806307d7ca2b146101af57806307e2cea5146101d35780631ad954d0146101db5780631c43bd7d146101e3575b600080fd5b6101956004803603602081101561018e57600080fd5b5035610337565b60408051918252519081900360200190f35b610195610355565b6101b761035b565b604080516001600160a01b039092168252519081900360200190f35b61019561036a565b61019561038e565b61020f600480360360408110156101f957600080fd5b506001600160a01b038135169060200135610394565b60408051938452602084019290925282820152519081900360600190f35b6101956103bd565b6101956103c3565b6101956004803603602081101561025357600080fd5b50356103c9565b6101956004803603602081101561027057600080fd5b50356103d6565b6101956103e3565b6101956004803603602081101561029557600080fd5b50356103e9565b6101956103fb565b610195610401565b6101b7610407565b61020f600480360360208110156102ca57600080fd5b5035610416565b610195610436565b61019561043c565b610195610442565b610195610448565b6101956004803603602081101561030757600080fd5b50356001600160a01b031661044e565b610195610460565b610195610466565b61019561046c565b610195610472565b6014818154811061034457fe5b600091825260209091200154905081565b600a5481565b6005546001600160a01b031681565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef181565b60135481565b600060208181529281526040808220909352908152208054600182015460029092015490919083565b60035481565b600d5481565b6015818154811061034457fe5b6016818154811061034457fe5b600f5481565b60176020526000908152604090205481565b600c5481565b60115481565b6004546001600160a01b031681565b600260208190526000918252604090912080546001820154919092015483565b60085481565b60075481565b600b5481565b60125481565b60016020526000908152604090205481565b60105481565b60065481565b60095481565b600e548156fea2646970667358221220a13914f9471100fadcea5282c9a7b5aac9758fe1f01e2996f627c7a3484aa0a564736f6c634300060c0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106101735760003560e01c80635b74ebbb116100de578063a5ca8f2e11610097578063cb2c02fe11610071578063cb2c02fe14610317578063de8e36291461031f578063e5ffad1f14610327578063e6dfae9e1461032f57610173565b8063a5ca8f2e146102e1578063ab0b8b64146102e9578063bf283312146102f157610173565b80635b74ebbb1461029c57806369e26ef5146102a45780636c928e9e146102ac5780636fa09f01146102b457806378f78eb1146102d15780639b50c816146102d957610173565b806347f94a5d1161013057806347f94a5d1461022d57806348d5a04a14610235578063494c0d241461023d578063560178a81461025a57806358fcc6ed146102775780635a459ed41461027f57610173565b80630249aad814610178578063053f14da146101a757806307d7ca2b146101af57806307e2cea5146101d35780631ad954d0146101db5780631c43bd7d146101e3575b600080fd5b6101956004803603602081101561018e57600080fd5b5035610337565b60408051918252519081900360200190f35b610195610355565b6101b761035b565b604080516001600160a01b039092168252519081900360200190f35b61019561036a565b61019561038e565b61020f600480360360408110156101f957600080fd5b506001600160a01b038135169060200135610394565b60408051938452602084019290925282820152519081900360600190f35b6101956103bd565b6101956103c3565b6101956004803603602081101561025357600080fd5b50356103c9565b6101956004803603602081101561027057600080fd5b50356103d6565b6101956103e3565b6101956004803603602081101561029557600080fd5b50356103e9565b6101956103fb565b610195610401565b6101b7610407565b61020f600480360360208110156102ca57600080fd5b5035610416565b610195610436565b61019561043c565b610195610442565b610195610448565b6101956004803603602081101561030757600080fd5b50356001600160a01b031661044e565b610195610460565b610195610466565b61019561046c565b610195610472565b6014818154811061034457fe5b600091825260209091200154905081565b600a5481565b6005546001600160a01b031681565b7f68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef181565b60135481565b600060208181529281526040808220909352908152208054600182015460029092015490919083565b60035481565b600d5481565b6015818154811061034457fe5b6016818154811061034457fe5b600f5481565b60176020526000908152604090205481565b600c5481565b60115481565b6004546001600160a01b031681565b600260208190526000918252604090912080546001820154919092015483565b60085481565b60075481565b600b5481565b60125481565b60016020526000908152604090205481565b60105481565b60065481565b60095481565b600e548156fea2646970667358221220a13914f9471100fadcea5282c9a7b5aac9758fe1f01e2996f627c7a3484aa0a564736f6c634300060c0033",
+  "immutableReferences": {},
+  "sourceMap": "92:157:7:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "92:157:7:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1144:24:6;;;;;;;;;;;;;;;;-1:-1:-1;1144:24:6;;:::i;:::-;;;;;;;;;;;;;;;;823:21;;;:::i;672:::-;;;:::i;:::-;;;;-1:-1:-1;;;;;672:21:6;;;;;;;;;;;;;;184:62:7;;;:::i;1106:27:6:-;;;:::i;418:63::-;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;418:63:6;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;605:28;;;:::i;915:20::-;;;:::i;1195:27::-;;;;;;;;;;;;;;;;-1:-1:-1;1195:27:6;;:::i;1262:23::-;;;;;;;;;;;;;;;;-1:-1:-1;1262:23:6;;:::i;971:22::-;;;:::i;1350:41::-;;;;;;;;;;;;;;;;-1:-1:-1;1350:41:6;;:::i;888:20::-;;;:::i;1033:32::-;;;:::i;640:25::-;;;:::i;555:43::-;;;;;;;;;;;;;;;;-1:-1:-1;555:43:6;;:::i;763:22::-;;;:::i;730:26::-;;;:::i;851:30::-;;;:::i;1072:27::-;;;:::i;488:42::-;;;;;;;;;;;;;;;;-1:-1:-1;488:42:6;-1:-1:-1;;;;;488:42:6;;:::i;1000:26::-;;;:::i;700:23::-;;;:::i;792:24::-;;;:::i;942:22::-;;;:::i;1144:24::-;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;1144:24:6;:::o;823:21::-;;;;:::o;672:::-;;;-1:-1:-1;;;;;672:21:6;;:::o;184:62:7:-;222:24;184:62;:::o;1106:27:6:-;;;;:::o;418:63::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;605:28::-;;;;:::o;915:20::-;;;;:::o;1195:27::-;;;;;;;;;;1262:23;;;;;;;;;;971:22;;;;:::o;1350:41::-;;;;;;;;;;;;;:::o;888:20::-;;;;:::o;1033:32::-;;;;:::o;640:25::-;;;-1:-1:-1;;;;;640:25:6;;:::o;555:43::-;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;763:22::-;;;;:::o;730:26::-;;;;:::o;851:30::-;;;;:::o;1072:27::-;;;;:::o;488:42::-;;;;;;;;;;;;;:::o;1000:26::-;;;;:::o;700:23::-;;;;:::o;792:24::-;;;;:::o;942:22::-;;;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity 0.6.12;\n\nimport \"./NFTFactoryStorage.sol\";\n\ncontract NFTFactoryStorageV2 is NFTFactoryStorage {\n    uint internal _foundationSeed;\n\n    bytes32 public constant ORACLE_ROLE = keccak256(\"ORACLE_ROLE\");\n}\n\n",
+  "sourcePath": "/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/NFTFactory/NFTFactoryStorageV2.sol",
+  "ast": {
+    "absolutePath": "/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/NFTFactory/NFTFactoryStorageV2.sol",
+    "exportedSymbols": {
+      "NFTFactoryStorageV2": [
+        3856
+      ]
+    },
+    "id": 3857,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3845,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:7"
+      },
+      {
+        "absolutePath": "/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/NFTFactory/NFTFactoryStorage.sol",
+        "file": "./NFTFactoryStorage.sol",
+        "id": 3846,
+        "nodeType": "ImportDirective",
+        "scope": 3857,
+        "sourceUnit": 3844,
+        "src": "57:33:7",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [
+          {
+            "arguments": null,
+            "baseName": {
+              "contractScope": null,
+              "id": 3847,
+              "name": "NFTFactoryStorage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 3843,
+              "src": "124:17:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_NFTFactoryStorage_$3843",
+                "typeString": "contract NFTFactoryStorage"
+              }
+            },
+            "id": 3848,
+            "nodeType": "InheritanceSpecifier",
+            "src": "124:17:7"
+          }
+        ],
+        "contractDependencies": [
+          3843
+        ],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 3856,
+        "linearizedBaseContracts": [
+          3856,
+          3843
+        ],
+        "name": "NFTFactoryStorageV2",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3850,
+            "mutability": "mutable",
+            "name": "_foundationSeed",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3856,
+            "src": "148:29:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3849,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "148:4:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": true,
+            "functionSelector": "07e2cea5",
+            "id": 3855,
+            "mutability": "constant",
+            "name": "ORACLE_ROLE",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3856,
+            "src": "184:62:7",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bytes32",
+              "typeString": "bytes32"
+            },
+            "typeName": {
+              "id": 3851,
+              "name": "bytes32",
+              "nodeType": "ElementaryTypeName",
+              "src": "184:7:7",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "arguments": [
+                {
+                  "argumentTypes": null,
+                  "hexValue": "4f5241434c455f524f4c45",
+                  "id": 3853,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "kind": "string",
+                  "lValueRequested": false,
+                  "nodeType": "Literal",
+                  "src": "232:13:7",
+                  "subdenomination": null,
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_stringliteral_68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef1",
+                    "typeString": "literal_string \"ORACLE_ROLE\""
+                  },
+                  "value": "ORACLE_ROLE"
+                }
+              ],
+              "expression": {
+                "argumentTypes": [
+                  {
+                    "typeIdentifier": "t_stringliteral_68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef1",
+                    "typeString": "literal_string \"ORACLE_ROLE\""
+                  }
+                ],
+                "id": 3852,
+                "name": "keccak256",
+                "nodeType": "Identifier",
+                "overloadedDeclarations": [],
+                "referencedDeclaration": -8,
+                "src": "222:9:7",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_function_keccak256_pure$_t_bytes_memory_ptr_$returns$_t_bytes32_$",
+                  "typeString": "function (bytes memory) pure returns (bytes32)"
+                }
+              },
+              "id": 3854,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "functionCall",
+              "lValueRequested": false,
+              "names": [],
+              "nodeType": "FunctionCall",
+              "src": "222:24:7",
+              "tryCall": false,
+              "typeDescriptions": {
+                "typeIdentifier": "t_bytes32",
+                "typeString": "bytes32"
+              }
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 3857,
+        "src": "92:157:7"
+      }
+    ],
+    "src": "32:219:7"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/NFTFactory/NFTFactoryStorageV2.sol",
+      "exportedSymbols": {
+        "NFTFactoryStorageV2": [
+          3856
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 3845,
+        "name": "PragmaDirective",
+        "src": "32:23:7"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 3844,
+          "absolutePath": "/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/NFTFactory/NFTFactoryStorage.sol",
+          "file": "./NFTFactoryStorage.sol",
+          "scope": 3857,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 3846,
+        "name": "ImportDirective",
+        "src": "57:33:7"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "contractDependencies": [
+            3843
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            3856,
+            3843
+          ],
+          "name": "NFTFactoryStorageV2",
+          "scope": 3857
+        },
+        "children": [
+          {
+            "attributes": {
+              "arguments": null
+            },
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "NFTFactoryStorage",
+                  "referencedDeclaration": 3843,
+                  "type": "contract NFTFactoryStorage"
+                },
+                "id": 3847,
+                "name": "UserDefinedTypeName",
+                "src": "124:17:7"
+              }
+            ],
+            "id": 3848,
+            "name": "InheritanceSpecifier",
+            "src": "124:17:7"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "mutability": "mutable",
+              "name": "_foundationSeed",
+              "overrides": null,
+              "scope": 3856,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "internal"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 3849,
+                "name": "ElementaryTypeName",
+                "src": "148:4:7"
+              }
+            ],
+            "id": 3850,
+            "name": "VariableDeclaration",
+            "src": "148:29:7"
+          },
+          {
+            "attributes": {
+              "constant": true,
+              "functionSelector": "07e2cea5",
+              "mutability": "constant",
+              "name": "ORACLE_ROLE",
+              "overrides": null,
+              "scope": 3856,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "bytes32",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "bytes32",
+                  "type": "bytes32"
+                },
+                "id": 3851,
+                "name": "ElementaryTypeName",
+                "src": "184:7:7"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "isStructConstructorCall": false,
+                  "lValueRequested": false,
+                  "names": [
+                    null
+                  ],
+                  "tryCall": false,
+                  "type": "bytes32",
+                  "type_conversion": false
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_68e79a7bf1e0bc45d0a330c573bc367f9cf464fd326078812f301165fbda4ef1",
+                          "typeString": "literal_string \"ORACLE_ROLE\""
+                        }
+                      ],
+                      "overloadedDeclarations": [
+                        null
+                      ],
+                      "referencedDeclaration": -8,
+                      "type": "function (bytes memory) pure returns (bytes32)",
+                      "value": "keccak256"
+                    },
+                    "id": 3852,
+                    "name": "Identifier",
+                    "src": "222:9:7"
+                  },
+                  {
+                    "attributes": {
+                      "argumentTypes": null,
+                      "hexvalue": "4f5241434c455f524f4c45",
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "subdenomination": null,
+                      "token": "string",
+                      "type": "literal_string \"ORACLE_ROLE\"",
+                      "value": "ORACLE_ROLE"
+                    },
+                    "id": 3853,
+                    "name": "Literal",
+                    "src": "232:13:7"
+                  }
+                ],
+                "id": 3854,
+                "name": "FunctionCall",
+                "src": "222:24:7"
+              }
+            ],
+            "id": 3855,
+            "name": "VariableDeclaration",
+            "src": "184:62:7"
+          }
+        ],
+        "id": 3856,
+        "name": "ContractDefinition",
+        "src": "92:157:7"
+      }
+    ],
+    "id": 3857,
+    "name": "SourceUnit",
+    "src": "32:219:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-12-10T08:12:25.886Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

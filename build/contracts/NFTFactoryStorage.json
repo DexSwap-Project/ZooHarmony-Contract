@@ -1,0 +1,2624 @@
+{
+  "contractName": "NFTFactoryStorage",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "CATEGORY_MASK",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "ITEM_MASK",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "LEVEL_MASK",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "dynamicMaxPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "dynamicMinPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "dynamicPriceTimeUnit",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "emptyTimes",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "goldenChestPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "lastOrderTimestamp",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "lastPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "maxNFTCategory",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "maxNFTItem",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "maxNFTLevel",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "maxNFTRandom",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "priceDown0",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "priceDown1",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "priceUp0",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "priceUp1",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "stakeInfo",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "lockTime",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "startTime",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "stakeAmount",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "stakePlan",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "priceMul",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "priceDiv",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "lockTime",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "stakePlanCount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "stakedAmount",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "zooHarmony",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "zooNFT",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"CATEGORY_MASK\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"ITEM_MASK\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"LEVEL_MASK\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"dynamicMaxPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"dynamicMinPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"dynamicPriceTimeUnit\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"emptyTimes\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"goldenChestPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"lastOrderTimestamp\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"lastPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"maxNFTCategory\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"maxNFTItem\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"maxNFTLevel\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"maxNFTRandom\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"priceDown0\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"priceDown1\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"priceUp0\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"priceUp1\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"stakeInfo\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"lockTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"startTime\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"stakeAmount\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"stakePlan\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"priceMul\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"priceDiv\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"lockTime\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"stakePlanCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"stakedAmount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"zooHarmony\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"zooNFT\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/NFTFactory/NFTFactoryStorage.sol\":\"NFTFactoryStorage\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/NFTFactory/NFTFactoryStorage.sol\":{\"keccak256\":\"0xa847b3be834b72edfaae3478936fddac3e20b332eda25ea741abd798b9b91510\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d0bfbec27fe2429bbbcddd661172d4b039bc25e91067aa24f1b2de0d30e03756\",\"dweb:/ipfs/QmcFKvKcr9qrHq8mWmYya5LFtLrywZukH8tnBDpv78tAQW\"]},\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c\",\"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610467806100206000396000f3fe608060405234801561001057600080fd5b50600436106101585760003560e01c806369e26ef5116100c3578063ab0b8b641161007c578063ab0b8b64146102c6578063bf283312146102ce578063cb2c02fe146102f4578063de8e3629146102fc578063e5ffad1f14610304578063e6dfae9e1461030c57610158565b806369e26ef5146102815780636c928e9e146102895780636fa09f011461029157806378f78eb1146102ae5780639b50c816146102b6578063a5ca8f2e146102be57610158565b806348d5a04a1161011557806348d5a04a14610212578063494c0d241461021a578063560178a81461023757806358fcc6ed146102545780635a459ed41461025c5780635b74ebbb1461027957610158565b80630249aad81461015d578063053f14da1461018c57806307d7ca2b146101945780631ad954d0146101b85780631c43bd7d146101c057806347f94a5d1461020a575b600080fd5b61017a6004803603602081101561017357600080fd5b5035610314565b60408051918252519081900360200190f35b61017a610332565b61019c610338565b604080516001600160a01b039092168252519081900360200190f35b61017a610347565b6101ec600480360360408110156101d657600080fd5b506001600160a01b03813516906020013561034d565b60408051938452602084019290925282820152519081900360600190f35b61017a610376565b61017a61037c565b61017a6004803603602081101561023057600080fd5b5035610382565b61017a6004803603602081101561024d57600080fd5b503561038f565b61017a61039c565b61017a6004803603602081101561027257600080fd5b50356103a2565b61017a6103b4565b61017a6103ba565b61019c6103c0565b6101ec600480360360208110156102a757600080fd5b50356103cf565b61017a6103ef565b61017a6103f5565b61017a6103fb565b61017a610401565b61017a600480360360208110156102e457600080fd5b50356001600160a01b0316610407565b61017a610419565b61017a61041f565b61017a610425565b61017a61042b565b6014818154811061032157fe5b600091825260209091200154905081565b600a5481565b6005546001600160a01b031681565b60135481565b600060208181529281526040808220909352908152208054600182015460029092015490919083565b60035481565b600d5481565b6015818154811061032157fe5b6016818154811061032157fe5b600f5481565b60176020526000908152604090205481565b600c5481565b60115481565b6004546001600160a01b031681565b600260208190526000918252604090912080546001820154919092015483565b60085481565b60075481565b600b5481565b60125481565b60016020526000908152604090205481565b60105481565b60065481565b60095481565b600e548156fea26469706673582212206502bc469518ef11ab2d37e86bbcb035beb9ffb5516644423c079edfad9aaab264736f6c634300060c0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106101585760003560e01c806369e26ef5116100c3578063ab0b8b641161007c578063ab0b8b64146102c6578063bf283312146102ce578063cb2c02fe146102f4578063de8e3629146102fc578063e5ffad1f14610304578063e6dfae9e1461030c57610158565b806369e26ef5146102815780636c928e9e146102895780636fa09f011461029157806378f78eb1146102ae5780639b50c816146102b6578063a5ca8f2e146102be57610158565b806348d5a04a1161011557806348d5a04a14610212578063494c0d241461021a578063560178a81461023757806358fcc6ed146102545780635a459ed41461025c5780635b74ebbb1461027957610158565b80630249aad81461015d578063053f14da1461018c57806307d7ca2b146101945780631ad954d0146101b85780631c43bd7d146101c057806347f94a5d1461020a575b600080fd5b61017a6004803603602081101561017357600080fd5b5035610314565b60408051918252519081900360200190f35b61017a610332565b61019c610338565b604080516001600160a01b039092168252519081900360200190f35b61017a610347565b6101ec600480360360408110156101d657600080fd5b506001600160a01b03813516906020013561034d565b60408051938452602084019290925282820152519081900360600190f35b61017a610376565b61017a61037c565b61017a6004803603602081101561023057600080fd5b5035610382565b61017a6004803603602081101561024d57600080fd5b503561038f565b61017a61039c565b61017a6004803603602081101561027257600080fd5b50356103a2565b61017a6103b4565b61017a6103ba565b61019c6103c0565b6101ec600480360360208110156102a757600080fd5b50356103cf565b61017a6103ef565b61017a6103f5565b61017a6103fb565b61017a610401565b61017a600480360360208110156102e457600080fd5b50356001600160a01b0316610407565b61017a610419565b61017a61041f565b61017a610425565b61017a61042b565b6014818154811061032157fe5b600091825260209091200154905081565b600a5481565b6005546001600160a01b031681565b60135481565b600060208181529281526040808220909352908152208054600182015460029092015490919083565b60035481565b600d5481565b6015818154811061032157fe5b6016818154811061032157fe5b600f5481565b60176020526000908152604090205481565b600c5481565b60115481565b6004546001600160a01b031681565b600260208190526000918252604090912080546001820154919092015483565b60085481565b60075481565b600b5481565b60125481565b60016020526000908152604090205481565b60105481565b60065481565b60095481565b600e548156fea26469706673582212206502bc469518ef11ab2d37e86bbcb035beb9ffb5516644423c079edfad9aaab264736f6c634300060c0033",
+  "immutableReferences": {},
+  "sourceMap": "110:1284:6:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "110:1284:6:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1144:24;;;;;;;;;;;;;;;;-1:-1:-1;1144:24:6;;:::i;:::-;;;;;;;;;;;;;;;;823:21;;;:::i;672:::-;;;:::i;:::-;;;;-1:-1:-1;;;;;672:21:6;;;;;;;;;;;;;;1106:27;;;:::i;418:63::-;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;418:63:6;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;605:28;;;:::i;915:20::-;;;:::i;1195:27::-;;;;;;;;;;;;;;;;-1:-1:-1;1195:27:6;;:::i;1262:23::-;;;;;;;;;;;;;;;;-1:-1:-1;1262:23:6;;:::i;971:22::-;;;:::i;1350:41::-;;;;;;;;;;;;;;;;-1:-1:-1;1350:41:6;;:::i;888:20::-;;;:::i;1033:32::-;;;:::i;640:25::-;;;:::i;555:43::-;;;;;;;;;;;;;;;;-1:-1:-1;555:43:6;;:::i;763:22::-;;;:::i;730:26::-;;;:::i;851:30::-;;;:::i;1072:27::-;;;:::i;488:42::-;;;;;;;;;;;;;;;;-1:-1:-1;488:42:6;-1:-1:-1;;;;;488:42:6;;:::i;1000:26::-;;;:::i;700:23::-;;;:::i;792:24::-;;;:::i;942:22::-;;;:::i;1144:24::-;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;1144:24:6;:::o;823:21::-;;;;:::o;672:::-;;;-1:-1:-1;;;;;672:21:6;;:::o;1106:27::-;;;;:::o;418:63::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;605:28::-;;;;:::o;915:20::-;;;;:::o;1195:27::-;;;;;;;;;;1262:23;;;;;;;;;;971:22;;;;:::o;1350:41::-;;;;;;;;;;;;;:::o;888:20::-;;;;:::o;1033:32::-;;;;:::o;640:25::-;;;-1:-1:-1;;;;;640:25:6;;:::o;555:43::-;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;763:22::-;;;;:::o;730:26::-;;;;:::o;851:30::-;;;;:::o;1072:27::-;;;;:::o;488:42::-;;;;;;;;;;;;;:::o;1000:26::-;;;;:::o;700:23::-;;;;:::o;792:24::-;;;;:::o;942:22::-;;;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity 0.6.12;\n\nimport \"@openzeppelin/contracts/math/SafeMath.sol\";\n\ncontract NFTFactoryStorage {\n    using SafeMath for uint256;\n\n    struct StakeInfo {\n        uint lockTime;\n        uint startTime;\n        uint stakeAmount;\n    }\n\n    struct StakePlan {\n        uint priceMul;\n        uint priceDiv;\n        uint lockTime;\n    }\n\n    // user => stake type => stake info\n    mapping(address => mapping(uint => StakeInfo)) public stakeInfo;\n\n    mapping(address => uint) public emptyTimes;\n\n    // id => plan\n    mapping(uint => StakePlan) public stakePlan;\n\n    uint public goldenChestPrice;\n\n    address public zooHarmony;\n\n    address public zooNFT;\n\n    uint public maxNFTLevel;\n\n    uint public maxNFTCategory;\n\n    uint public maxNFTItem;\n\n    uint public maxNFTRandom;\n\n    uint public lastPrice;\n\n    uint public lastOrderTimestamp;\n\n    uint public priceUp0;\n\n    uint public priceUp1;\n\n    uint public priceDown0;\n\n    uint public priceDown1;\n\n    uint public stakePlanCount;\n\n    uint public dynamicPriceTimeUnit;\n\n    uint public dynamicMaxPrice;\n\n    uint public dynamicMinPrice;\n    \n    uint[] public LEVEL_MASK; // 60%, 30%, 5%, 1%\n\n    uint[] public CATEGORY_MASK; // 40%, 33%, 17%, 7%, 2%, 1%\n    \n    uint[] public ITEM_MASK; // 35%, 30%, 20%, 10%, 5%\n\n    // planId => stakeZooAmount\n    mapping(uint => uint) public stakedAmount;\n}\n",
+  "sourcePath": "/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/NFTFactory/NFTFactoryStorage.sol",
+  "ast": {
+    "absolutePath": "/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/NFTFactory/NFTFactoryStorage.sol",
+    "exportedSymbols": {
+      "NFTFactoryStorage": [
+        3843
+      ]
+    },
+    "id": 3844,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3763,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:6"
+      },
+      {
+        "absolutePath": "@openzeppelin/contracts/math/SafeMath.sol",
+        "file": "@openzeppelin/contracts/math/SafeMath.sol",
+        "id": 3764,
+        "nodeType": "ImportDirective",
+        "scope": 3844,
+        "sourceUnit": 9137,
+        "src": "57:51:6",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 3843,
+        "linearizedBaseContracts": [
+          3843
+        ],
+        "name": "NFTFactoryStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "id": 3767,
+            "libraryName": {
+              "contractScope": null,
+              "id": 3765,
+              "name": "SafeMath",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 9136,
+              "src": "149:8:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_SafeMath_$9136",
+                "typeString": "library SafeMath"
+              }
+            },
+            "nodeType": "UsingForDirective",
+            "src": "143:27:6",
+            "typeName": {
+              "id": 3766,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "162:7:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            }
+          },
+          {
+            "canonicalName": "NFTFactoryStorage.StakeInfo",
+            "id": 3774,
+            "members": [
+              {
+                "constant": false,
+                "id": 3769,
+                "mutability": "mutable",
+                "name": "lockTime",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3774,
+                "src": "203:13:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3768,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "203:4:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3771,
+                "mutability": "mutable",
+                "name": "startTime",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3774,
+                "src": "226:14:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3770,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "226:4:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3773,
+                "mutability": "mutable",
+                "name": "stakeAmount",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3774,
+                "src": "250:16:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3772,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "250:4:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "StakeInfo",
+            "nodeType": "StructDefinition",
+            "scope": 3843,
+            "src": "176:97:6",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "NFTFactoryStorage.StakePlan",
+            "id": 3781,
+            "members": [
+              {
+                "constant": false,
+                "id": 3776,
+                "mutability": "mutable",
+                "name": "priceMul",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3781,
+                "src": "306:13:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3775,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "306:4:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3778,
+                "mutability": "mutable",
+                "name": "priceDiv",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3781,
+                "src": "329:13:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3777,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "329:4:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3780,
+                "mutability": "mutable",
+                "name": "lockTime",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3781,
+                "src": "352:13:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3779,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "352:4:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "StakePlan",
+            "nodeType": "StructDefinition",
+            "scope": 3843,
+            "src": "279:93:6",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "1c43bd7d",
+            "id": 3787,
+            "mutability": "mutable",
+            "name": "stakeInfo",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "418:63:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_uint256_$_t_struct$_StakeInfo_$3774_storage_$_$",
+              "typeString": "mapping(address => mapping(uint256 => struct NFTFactoryStorage.StakeInfo))"
+            },
+            "typeName": {
+              "id": 3786,
+              "keyType": {
+                "id": 3782,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "426:7:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "418:46:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_mapping$_t_uint256_$_t_struct$_StakeInfo_$3774_storage_$_$",
+                "typeString": "mapping(address => mapping(uint256 => struct NFTFactoryStorage.StakeInfo))"
+              },
+              "valueType": {
+                "id": 3785,
+                "keyType": {
+                  "id": 3783,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "445:4:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "nodeType": "Mapping",
+                "src": "437:26:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_StakeInfo_$3774_storage_$",
+                  "typeString": "mapping(uint256 => struct NFTFactoryStorage.StakeInfo)"
+                },
+                "valueType": {
+                  "contractScope": null,
+                  "id": 3784,
+                  "name": "StakeInfo",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 3774,
+                  "src": "453:9:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_StakeInfo_$3774_storage_ptr",
+                    "typeString": "struct NFTFactoryStorage.StakeInfo"
+                  }
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "bf283312",
+            "id": 3791,
+            "mutability": "mutable",
+            "name": "emptyTimes",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "488:42:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+              "typeString": "mapping(address => uint256)"
+            },
+            "typeName": {
+              "id": 3790,
+              "keyType": {
+                "id": 3788,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "496:7:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "488:24:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                "typeString": "mapping(address => uint256)"
+              },
+              "valueType": {
+                "id": 3789,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "507:4:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "6fa09f01",
+            "id": 3795,
+            "mutability": "mutable",
+            "name": "stakePlan",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "555:43:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_StakePlan_$3781_storage_$",
+              "typeString": "mapping(uint256 => struct NFTFactoryStorage.StakePlan)"
+            },
+            "typeName": {
+              "id": 3794,
+              "keyType": {
+                "id": 3792,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "563:4:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "555:26:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_StakePlan_$3781_storage_$",
+                "typeString": "mapping(uint256 => struct NFTFactoryStorage.StakePlan)"
+              },
+              "valueType": {
+                "contractScope": null,
+                "id": 3793,
+                "name": "StakePlan",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 3781,
+                "src": "571:9:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_StakePlan_$3781_storage_ptr",
+                  "typeString": "struct NFTFactoryStorage.StakePlan"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "47f94a5d",
+            "id": 3797,
+            "mutability": "mutable",
+            "name": "goldenChestPrice",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "605:28:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3796,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "605:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "6c928e9e",
+            "id": 3799,
+            "mutability": "mutable",
+            "name": "zooHarmony",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "640:25:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 3798,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "640:7:6",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "07d7ca2b",
+            "id": 3801,
+            "mutability": "mutable",
+            "name": "zooNFT",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "672:21:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 3800,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "672:7:6",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "de8e3629",
+            "id": 3803,
+            "mutability": "mutable",
+            "name": "maxNFTLevel",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "700:23:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3802,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "700:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "9b50c816",
+            "id": 3805,
+            "mutability": "mutable",
+            "name": "maxNFTCategory",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "730:26:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3804,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "730:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "78f78eb1",
+            "id": 3807,
+            "mutability": "mutable",
+            "name": "maxNFTItem",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "763:22:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3806,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "763:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "e5ffad1f",
+            "id": 3809,
+            "mutability": "mutable",
+            "name": "maxNFTRandom",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "792:24:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3808,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "792:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "053f14da",
+            "id": 3811,
+            "mutability": "mutable",
+            "name": "lastPrice",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "823:21:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3810,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "823:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "a5ca8f2e",
+            "id": 3813,
+            "mutability": "mutable",
+            "name": "lastOrderTimestamp",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "851:30:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3812,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "851:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "5b74ebbb",
+            "id": 3815,
+            "mutability": "mutable",
+            "name": "priceUp0",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "888:20:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3814,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "888:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "48d5a04a",
+            "id": 3817,
+            "mutability": "mutable",
+            "name": "priceUp1",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "915:20:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3816,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "915:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "e6dfae9e",
+            "id": 3819,
+            "mutability": "mutable",
+            "name": "priceDown0",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "942:22:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3818,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "942:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "58fcc6ed",
+            "id": 3821,
+            "mutability": "mutable",
+            "name": "priceDown1",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "971:22:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3820,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "971:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "cb2c02fe",
+            "id": 3823,
+            "mutability": "mutable",
+            "name": "stakePlanCount",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "1000:26:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3822,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "1000:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "69e26ef5",
+            "id": 3825,
+            "mutability": "mutable",
+            "name": "dynamicPriceTimeUnit",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "1033:32:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3824,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "1033:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "ab0b8b64",
+            "id": 3827,
+            "mutability": "mutable",
+            "name": "dynamicMaxPrice",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "1072:27:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3826,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "1072:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "1ad954d0",
+            "id": 3829,
+            "mutability": "mutable",
+            "name": "dynamicMinPrice",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "1106:27:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 3828,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "1106:4:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "0249aad8",
+            "id": 3832,
+            "mutability": "mutable",
+            "name": "LEVEL_MASK",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "1144:24:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
+              "typeString": "uint256[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 3830,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "1144:4:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "id": 3831,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "1144:6:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                "typeString": "uint256[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "494c0d24",
+            "id": 3835,
+            "mutability": "mutable",
+            "name": "CATEGORY_MASK",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "1195:27:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
+              "typeString": "uint256[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 3833,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "1195:4:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "id": 3834,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "1195:6:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                "typeString": "uint256[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "560178a8",
+            "id": 3838,
+            "mutability": "mutable",
+            "name": "ITEM_MASK",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "1262:23:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_uint256_$dyn_storage",
+              "typeString": "uint256[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 3836,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "1262:4:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "id": 3837,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "1262:6:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                "typeString": "uint256[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "5a459ed4",
+            "id": 3842,
+            "mutability": "mutable",
+            "name": "stakedAmount",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3843,
+            "src": "1350:41:6",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
+              "typeString": "mapping(uint256 => uint256)"
+            },
+            "typeName": {
+              "id": 3841,
+              "keyType": {
+                "id": 3839,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "1358:4:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "1350:21:6",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
+                "typeString": "mapping(uint256 => uint256)"
+              },
+              "valueType": {
+                "id": 3840,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "1366:4:6",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 3844,
+        "src": "110:1284:6"
+      }
+    ],
+    "src": "32:1363:6"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/mnt/d/Zoo/zoo-keeper-contracts-main/contracts/NFTFactory/NFTFactoryStorage.sol",
+      "exportedSymbols": {
+        "NFTFactoryStorage": [
+          3843
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 3763,
+        "name": "PragmaDirective",
+        "src": "32:23:6"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 9137,
+          "absolutePath": "@openzeppelin/contracts/math/SafeMath.sol",
+          "file": "@openzeppelin/contracts/math/SafeMath.sol",
+          "scope": 3844,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 3764,
+        "name": "ImportDirective",
+        "src": "57:51:6"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            3843
+          ],
+          "name": "NFTFactoryStorage",
+          "scope": 3844
+        },
+        "children": [
+          {
+            "children": [
+              {
+                "attributes": {
+                  "contractScope": null,
+                  "name": "SafeMath",
+                  "referencedDeclaration": 9136,
+                  "type": "library SafeMath"
+                },
+                "id": 3765,
+                "name": "UserDefinedTypeName",
+                "src": "149:8:6"
+              },
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 3766,
+                "name": "ElementaryTypeName",
+                "src": "162:7:6"
+              }
+            ],
+            "id": 3767,
+            "name": "UsingForDirective",
+            "src": "143:27:6"
+          },
+          {
+            "attributes": {
+              "canonicalName": "NFTFactoryStorage.StakeInfo",
+              "name": "StakeInfo",
+              "scope": 3843,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "lockTime",
+                  "overrides": null,
+                  "scope": 3774,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3768,
+                    "name": "ElementaryTypeName",
+                    "src": "203:4:6"
+                  }
+                ],
+                "id": 3769,
+                "name": "VariableDeclaration",
+                "src": "203:13:6"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "startTime",
+                  "overrides": null,
+                  "scope": 3774,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3770,
+                    "name": "ElementaryTypeName",
+                    "src": "226:4:6"
+                  }
+                ],
+                "id": 3771,
+                "name": "VariableDeclaration",
+                "src": "226:14:6"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "stakeAmount",
+                  "overrides": null,
+                  "scope": 3774,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3772,
+                    "name": "ElementaryTypeName",
+                    "src": "250:4:6"
+                  }
+                ],
+                "id": 3773,
+                "name": "VariableDeclaration",
+                "src": "250:16:6"
+              }
+            ],
+            "id": 3774,
+            "name": "StructDefinition",
+            "src": "176:97:6"
+          },
+          {
+            "attributes": {
+              "canonicalName": "NFTFactoryStorage.StakePlan",
+              "name": "StakePlan",
+              "scope": 3843,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "priceMul",
+                  "overrides": null,
+                  "scope": 3781,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3775,
+                    "name": "ElementaryTypeName",
+                    "src": "306:4:6"
+                  }
+                ],
+                "id": 3776,
+                "name": "VariableDeclaration",
+                "src": "306:13:6"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "priceDiv",
+                  "overrides": null,
+                  "scope": 3781,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3777,
+                    "name": "ElementaryTypeName",
+                    "src": "329:4:6"
+                  }
+                ],
+                "id": 3778,
+                "name": "VariableDeclaration",
+                "src": "329:13:6"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "lockTime",
+                  "overrides": null,
+                  "scope": 3781,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3779,
+                    "name": "ElementaryTypeName",
+                    "src": "352:4:6"
+                  }
+                ],
+                "id": 3780,
+                "name": "VariableDeclaration",
+                "src": "352:13:6"
+              }
+            ],
+            "id": 3781,
+            "name": "StructDefinition",
+            "src": "279:93:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "1c43bd7d",
+              "mutability": "mutable",
+              "name": "stakeInfo",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(address => mapping(uint256 => struct NFTFactoryStorage.StakeInfo))",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(address => mapping(uint256 => struct NFTFactoryStorage.StakeInfo))"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 3782,
+                    "name": "ElementaryTypeName",
+                    "src": "426:7:6"
+                  },
+                  {
+                    "attributes": {
+                      "type": "mapping(uint256 => struct NFTFactoryStorage.StakeInfo)"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 3783,
+                        "name": "ElementaryTypeName",
+                        "src": "445:4:6"
+                      },
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "StakeInfo",
+                          "referencedDeclaration": 3774,
+                          "type": "struct NFTFactoryStorage.StakeInfo"
+                        },
+                        "id": 3784,
+                        "name": "UserDefinedTypeName",
+                        "src": "453:9:6"
+                      }
+                    ],
+                    "id": 3785,
+                    "name": "Mapping",
+                    "src": "437:26:6"
+                  }
+                ],
+                "id": 3786,
+                "name": "Mapping",
+                "src": "418:46:6"
+              }
+            ],
+            "id": 3787,
+            "name": "VariableDeclaration",
+            "src": "418:63:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "bf283312",
+              "mutability": "mutable",
+              "name": "emptyTimes",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(address => uint256)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(address => uint256)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "type": "address"
+                    },
+                    "id": 3788,
+                    "name": "ElementaryTypeName",
+                    "src": "496:7:6"
+                  },
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3789,
+                    "name": "ElementaryTypeName",
+                    "src": "507:4:6"
+                  }
+                ],
+                "id": 3790,
+                "name": "Mapping",
+                "src": "488:24:6"
+              }
+            ],
+            "id": 3791,
+            "name": "VariableDeclaration",
+            "src": "488:42:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "6fa09f01",
+              "mutability": "mutable",
+              "name": "stakePlan",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(uint256 => struct NFTFactoryStorage.StakePlan)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(uint256 => struct NFTFactoryStorage.StakePlan)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3792,
+                    "name": "ElementaryTypeName",
+                    "src": "563:4:6"
+                  },
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "StakePlan",
+                      "referencedDeclaration": 3781,
+                      "type": "struct NFTFactoryStorage.StakePlan"
+                    },
+                    "id": 3793,
+                    "name": "UserDefinedTypeName",
+                    "src": "571:9:6"
+                  }
+                ],
+                "id": 3794,
+                "name": "Mapping",
+                "src": "555:26:6"
+              }
+            ],
+            "id": 3795,
+            "name": "VariableDeclaration",
+            "src": "555:43:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "47f94a5d",
+              "mutability": "mutable",
+              "name": "goldenChestPrice",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 3796,
+                "name": "ElementaryTypeName",
+                "src": "605:4:6"
+              }
+            ],
+            "id": 3797,
+            "name": "VariableDeclaration",
+            "src": "605:28:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "6c928e9e",
+              "mutability": "mutable",
+              "name": "zooHarmony",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 3798,
+                "name": "ElementaryTypeName",
+                "src": "640:7:6"
+              }
+            ],
+            "id": 3799,
+            "name": "VariableDeclaration",
+            "src": "640:25:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "07d7ca2b",
+              "mutability": "mutable",
+              "name": "zooNFT",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "stateMutability": "nonpayable",
+                  "type": "address"
+                },
+                "id": 3800,
+                "name": "ElementaryTypeName",
+                "src": "672:7:6"
+              }
+            ],
+            "id": 3801,
+            "name": "VariableDeclaration",
+            "src": "672:21:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "de8e3629",
+              "mutability": "mutable",
+              "name": "maxNFTLevel",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 3802,
+                "name": "ElementaryTypeName",
+                "src": "700:4:6"
+              }
+            ],
+            "id": 3803,
+            "name": "VariableDeclaration",
+            "src": "700:23:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "9b50c816",
+              "mutability": "mutable",
+              "name": "maxNFTCategory",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 3804,
+                "name": "ElementaryTypeName",
+                "src": "730:4:6"
+              }
+            ],
+            "id": 3805,
+            "name": "VariableDeclaration",
+            "src": "730:26:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "78f78eb1",
+              "mutability": "mutable",
+              "name": "maxNFTItem",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 3806,
+                "name": "ElementaryTypeName",
+                "src": "763:4:6"
+              }
+            ],
+            "id": 3807,
+            "name": "VariableDeclaration",
+            "src": "763:22:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "e5ffad1f",
+              "mutability": "mutable",
+              "name": "maxNFTRandom",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 3808,
+                "name": "ElementaryTypeName",
+                "src": "792:4:6"
+              }
+            ],
+            "id": 3809,
+            "name": "VariableDeclaration",
+            "src": "792:24:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "053f14da",
+              "mutability": "mutable",
+              "name": "lastPrice",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 3810,
+                "name": "ElementaryTypeName",
+                "src": "823:4:6"
+              }
+            ],
+            "id": 3811,
+            "name": "VariableDeclaration",
+            "src": "823:21:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "a5ca8f2e",
+              "mutability": "mutable",
+              "name": "lastOrderTimestamp",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 3812,
+                "name": "ElementaryTypeName",
+                "src": "851:4:6"
+              }
+            ],
+            "id": 3813,
+            "name": "VariableDeclaration",
+            "src": "851:30:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "5b74ebbb",
+              "mutability": "mutable",
+              "name": "priceUp0",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 3814,
+                "name": "ElementaryTypeName",
+                "src": "888:4:6"
+              }
+            ],
+            "id": 3815,
+            "name": "VariableDeclaration",
+            "src": "888:20:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "48d5a04a",
+              "mutability": "mutable",
+              "name": "priceUp1",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 3816,
+                "name": "ElementaryTypeName",
+                "src": "915:4:6"
+              }
+            ],
+            "id": 3817,
+            "name": "VariableDeclaration",
+            "src": "915:20:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "e6dfae9e",
+              "mutability": "mutable",
+              "name": "priceDown0",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 3818,
+                "name": "ElementaryTypeName",
+                "src": "942:4:6"
+              }
+            ],
+            "id": 3819,
+            "name": "VariableDeclaration",
+            "src": "942:22:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "58fcc6ed",
+              "mutability": "mutable",
+              "name": "priceDown1",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 3820,
+                "name": "ElementaryTypeName",
+                "src": "971:4:6"
+              }
+            ],
+            "id": 3821,
+            "name": "VariableDeclaration",
+            "src": "971:22:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "cb2c02fe",
+              "mutability": "mutable",
+              "name": "stakePlanCount",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 3822,
+                "name": "ElementaryTypeName",
+                "src": "1000:4:6"
+              }
+            ],
+            "id": 3823,
+            "name": "VariableDeclaration",
+            "src": "1000:26:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "69e26ef5",
+              "mutability": "mutable",
+              "name": "dynamicPriceTimeUnit",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 3824,
+                "name": "ElementaryTypeName",
+                "src": "1033:4:6"
+              }
+            ],
+            "id": 3825,
+            "name": "VariableDeclaration",
+            "src": "1033:32:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "ab0b8b64",
+              "mutability": "mutable",
+              "name": "dynamicMaxPrice",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 3826,
+                "name": "ElementaryTypeName",
+                "src": "1072:4:6"
+              }
+            ],
+            "id": 3827,
+            "name": "VariableDeclaration",
+            "src": "1072:27:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "1ad954d0",
+              "mutability": "mutable",
+              "name": "dynamicMinPrice",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 3828,
+                "name": "ElementaryTypeName",
+                "src": "1106:4:6"
+              }
+            ],
+            "id": 3829,
+            "name": "VariableDeclaration",
+            "src": "1106:27:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "0249aad8",
+              "mutability": "mutable",
+              "name": "LEVEL_MASK",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256[]",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "uint256[]"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3830,
+                    "name": "ElementaryTypeName",
+                    "src": "1144:4:6"
+                  }
+                ],
+                "id": 3831,
+                "name": "ArrayTypeName",
+                "src": "1144:6:6"
+              }
+            ],
+            "id": 3832,
+            "name": "VariableDeclaration",
+            "src": "1144:24:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "494c0d24",
+              "mutability": "mutable",
+              "name": "CATEGORY_MASK",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256[]",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "uint256[]"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3833,
+                    "name": "ElementaryTypeName",
+                    "src": "1195:4:6"
+                  }
+                ],
+                "id": 3834,
+                "name": "ArrayTypeName",
+                "src": "1195:6:6"
+              }
+            ],
+            "id": 3835,
+            "name": "VariableDeclaration",
+            "src": "1195:27:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "560178a8",
+              "mutability": "mutable",
+              "name": "ITEM_MASK",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256[]",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "uint256[]"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3836,
+                    "name": "ElementaryTypeName",
+                    "src": "1262:4:6"
+                  }
+                ],
+                "id": 3837,
+                "name": "ArrayTypeName",
+                "src": "1262:6:6"
+              }
+            ],
+            "id": 3838,
+            "name": "VariableDeclaration",
+            "src": "1262:23:6"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "5a459ed4",
+              "mutability": "mutable",
+              "name": "stakedAmount",
+              "overrides": null,
+              "scope": 3843,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(uint256 => uint256)",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(uint256 => uint256)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3839,
+                    "name": "ElementaryTypeName",
+                    "src": "1358:4:6"
+                  },
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3840,
+                    "name": "ElementaryTypeName",
+                    "src": "1366:4:6"
+                  }
+                ],
+                "id": 3841,
+                "name": "Mapping",
+                "src": "1350:21:6"
+              }
+            ],
+            "id": 3842,
+            "name": "VariableDeclaration",
+            "src": "1350:41:6"
+          }
+        ],
+        "id": 3843,
+        "name": "ContractDefinition",
+        "src": "110:1284:6"
+      }
+    ],
+    "id": 3844,
+    "name": "SourceUnit",
+    "src": "32:1363:6"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-12-10T08:12:25.869Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
