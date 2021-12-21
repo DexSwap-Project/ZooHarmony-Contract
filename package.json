@@ -8,6 +8,9 @@
     "d1": "truffle migrate --to 1 --f 1 --network harmony",
     "d2": "truffle migrate --to 2 --f 2 --network harmony",
     "d3": "truffle migrate --to 3 --f 3 --network harmony",
+    "a1": "truffle migrate --to 1 --f 1 --network harmony_testnet",
+    "a2": "truffle migrate --to 2 --f 2 --network harmony_testnet",
+    "a3": "truffle migrate --to 3 --f 3 --network harmony_testnet",
     "test": "truffle test",
     "coverage": "truffle run coverage --network coverage"
   },
