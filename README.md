@@ -13,9 +13,9 @@ ZooHarmony has  7 contracts:
 Boosting, NFT Factory and Marketplace are upgradable contracts, which facilitate the future expansion of richer gameplay.
 
 
-# Harmony Mainnet Deploy
+# Harmony Mainnet Deployments
 
-**Todo: yarn d1** || **Testnet: yarn a1 && a2 && a3**
+**Todo: yarn d1** 
 
 ```
 1_initial_migration.js
@@ -417,4 +417,295 @@ Summary
 
 
 Done in 70.79s.
+```
+
+# Harmony Testnet Deployments
+```
+1_initial_migration.js
+======================
+deployerAddr 0x71928387c8d507192c912b84a6efbf603fbfebaa
+
+   Deploying 'NFTFactoryDelegate'
+   ------------------------------
+   > transaction hash:    0x1eeb72c3e1597de3459d56fa699dedcee3a018289b870a5c0e500ff14fa31dd7
+   > Blocks: 5            Seconds: 9
+   > contract address:    0x71d218571f7582B4F04e1c6eeFAb2493BCe370d4
+   > block number:        19138601
+   > block timestamp:     1640105049
+   > account:             0x71928387C8D507192C912B84A6eFbf603FBfEbAA
+   > balance:             239.315629633074085008
+   > gas used:            2818443 (0x2b018b)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.05636886 ETH
+
+
+   Deploying 'ZooNFT'
+   ------------------
+   > transaction hash:    0xb5bbf93ebe50ff92c4f3ef218a0404069af4619e461ef96ba288dee6c352abe5
+   > Blocks: 2            Seconds: 5
+   > contract address:    0x0D51F062e5dCb8238F1B149CD2A32c7336619F0b
+   > block number:        19138608
+   > block timestamp:     1640105063
+   > account:             0x71928387C8D507192C912B84A6eFbf603FBfEbAA
+   > balance:             239.254289753074085008
+   > gas used:            3066994 (0x2ecc72)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.06133988 ETH
+
+
+   Deploying 'BoostingDelegate'
+   ----------------------------
+   > transaction hash:    0xbcc2e2b10d17c84552f4f7232400d64a79d23d498ed28ddc75107e0ad0600801
+   > Blocks: 2            Seconds: 5
+   > contract address:    0xAEDdde1847858256eaAd6f1D1A6e58f59922Da6C
+   > block number:        19138616
+   > block timestamp:     1640105079
+   > account:             0x71928387C8D507192C912B84A6eFbf603FBfEbAA
+   > balance:             239.227979633074085008
+   > gas used:            1315506 (0x1412b2)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.02631012 ETH
+
+
+   Deploying 'MarketplaceDelegate'
+   -------------------------------
+   > transaction hash:    0x7508a760607f97ce54606cdd7553b9eb31005070a194ec63b986a2d1585cbf1a
+   > Blocks: 4            Seconds: 9
+   > contract address:    0xFaC5F48Ab95d6e287cf2813E0ceD660c9b8cf36c
+   > block number:        19138623
+   > block timestamp:     1640105093
+   > account:             0x71928387C8D507192C912B84A6eFbf603FBfEbAA
+   > balance:             239.195120573074085008
+   > gas used:            1642953 (0x1911c9)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.03285906 ETH
+
+
+   Deploying 'ZooKeeperProxy'
+   --------------------------
+   > transaction hash:    0x13136b96e56248e6884104a622f304608f6ca2396f43bec04e7884473fcee98b
+   > Blocks: 2            Seconds: 5
+   > contract address:    0xa61b4399e066EF11c4959dEF0a3ADE5b07bF45E8
+   > block number:        19138632
+   > block timestamp:     1640105111
+   > account:             0x71928387C8D507192C912B84A6eFbf603FBfEbAA
+   > balance:             239.183843173074085008
+   > gas used:            563870 (0x89a9e)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0112774 ETH
+
+
+   Replacing 'ZooKeeperProxy'
+   --------------------------
+   > transaction hash:    0x139c998d3fd1d34718c2e04ddaf8554e9591715074c5ce34371b1ef8859ae8bd
+   > Blocks: 2            Seconds: 5
+   > contract address:    0x373af02298222c199F28F13A4b6581e9B890e22E
+   > block number:        19138639
+   > block timestamp:     1640105125
+   > account:             0x71928387C8D507192C912B84A6eFbf603FBfEbAA
+   > balance:             239.172565773074085008
+   > gas used:            563870 (0x89a9e)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0112774 ETH
+
+
+   Replacing 'ZooKeeperProxy'
+   --------------------------
+   > transaction hash:    0xd64bbe5fac304ecf9121299cac37ffa84c32d447c8245a403b400e1427eca341
+   > Blocks: 3            Seconds: 6
+   > contract address:    0xDf3EC473562ef92FDC57260E06B1F906cF010a20
+   > block number:        19138647
+   > block timestamp:     1640105141
+   > account:             0x71928387C8D507192C912B84A6eFbf603FBfEbAA
+   > balance:             239.161288373074085008
+   > gas used:            563870 (0x89a9e)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0112774 ETH
+
+
+   Deploying 'ZooHarmony'
+   ----------------------
+   > transaction hash:    0xd07deb786a828f982a0d82fc7ffe9ba7697d166d9cc38f28b74751c45eaf7887
+   > Blocks: 2            Seconds: 5
+   > contract address:    0xFa99bB4994833f177153f000867408019a521B5d
+   > block number:        19138654
+   > block timestamp:     1640105155
+   > account:             0x71928387C8D507192C912B84A6eFbf603FBfEbAA
+   > balance:             239.140767973074085008
+   > gas used:            1026020 (0xfa7e4)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0205204 ETH
+
+
+   Deploying 'ZooKeeperFarming'
+   ----------------------------
+   > transaction hash:    0x3d0eb8b27e2f5c580ed69a420f2771f546c25a02bc3fc3def3d5a71a76b63d69
+   > Blocks: 3            Seconds: 5
+   > contract address:    0x97f2eF8b39bc1DBbD93b49722420Dc0e2DbCbAEE
+   > block number:        19138664
+   > block timestamp:     1640105175
+   > account:             0x71928387C8D507192C912B84A6eFbf603FBfEbAA
+   > balance:             239.086593353074085008
+   > gas used:            2641950 (0x28501e)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.052839 ETH
+
+1 1 1 84000000000
+1 1 2 72000000000
+1 1 3 48000000000
+1 1 4 24000000000
+1 1 5 12000000000
+1 2 1 69300000000
+1 2 2 59400000000
+1 2 3 39600000000
+1 2 4 19800000000
+1 2 5 9900000000
+1 3 1 35700000000
+1 3 2 30600000000
+1 3 3 20400000000
+1 3 4 10200000000
+1 3 5 5100000000
+1 4 1 14700000000
+1 4 2 12600000000
+1 4 3 8400000000
+1 4 4 4200000000
+1 4 5 2100000000
+1 5 1 4200000000
+1 5 2 3600000000
+1 5 3 2400000000
+1 5 4 1200000000
+1 5 5 600000000
+1 6 1 2100000000
+1 6 2 1800000000
+1 6 3 1200000000
+1 6 4 600000000
+1 6 5 300000000
+2 1 1 42000000000
+2 1 2 36000000000
+2 1 3 24000000000
+2 1 4 12000000000
+2 1 5 6000000000
+2 2 1 34650000000
+2 2 2 29700000000
+2 2 3 19800000000
+2 2 4 9900000000
+2 2 5 4950000000
+2 3 1 17850000000
+2 3 2 15300000000
+2 3 3 10200000000
+2 3 4 5100000000
+2 3 5 2550000000
+2 4 1 7350000000
+2 4 2 6300000000
+2 4 3 4200000000
+2 4 4 2100000000
+2 4 5 1050000000
+2 5 1 2100000000
+2 5 2 1800000000
+2 5 3 1200000000
+2 5 4 600000000
+2 5 5 300000000
+2 6 1 1050000000
+2 6 2 900000000
+2 6 3 600000000
+2 6 4 300000000
+2 6 5 150000000
+3 1 1 7000000000
+3 1 2 6000000000
+3 1 3 4000000000
+3 1 4 2000000000
+3 1 5 1000000000
+3 2 1 5775000000
+3 2 2 4950000000
+3 2 3 3300000000
+3 2 4 1650000000
+3 2 5 825000000
+3 3 1 2975000000
+3 3 2 2550000000
+3 3 3 1700000000
+3 3 4 850000000
+3 3 5 425000000
+3 4 1 1225000000
+3 4 2 1050000000
+3 4 3 700000000
+3 4 4 350000000
+3 4 5 175000000
+3 5 1 350000000
+3 5 2 300000000
+3 5 3 200000000
+3 5 4 100000000
+3 5 5 50000000
+3 6 1 175000000
+3 6 2 150000000
+3 6 3 100000000
+3 6 4 50000000
+3 6 5 25000000
+4 1 1 1400000000
+4 1 2 1200000000
+4 1 3 800000000
+4 1 4 400000000
+4 1 5 200000000
+4 2 1 1155000000
+4 2 2 990000000
+4 2 3 660000000
+4 2 4 330000000
+4 2 5 165000000
+4 3 1 595000000
+4 3 2 510000000
+4 3 3 340000000
+4 3 4 170000000
+4 3 5 85000000
+4 4 1 245000000
+4 4 2 210000000
+4 4 3 140000000
+4 4 4 70000000
+4 4 5 35000000
+4 5 1 70000000
+4 5 2 60000000
+4 5 3 40000000
+4 5 4 20000000
+4 5 5 10000000
+4 6 1 35000000
+4 6 2 30000000
+4 6 3 20000000
+4 6 4 10000000
+4 6 5 5000000
+ready to config NFT boost...
+ready to config NFT URL...
+NFT config finished.
+-------------------------------
+nftFactory: 0xa61b4399e066EF11c4959dEF0a3ADE5b07bF45E8
+zooNFT: 0x0D51F062e5dCb8238F1B149CD2A32c7336619F0b
+boosting: 0x373af02298222c199F28F13A4b6581e9B890e22E
+marketplace: 0xDf3EC473562ef92FDC57260E06B1F906cF010a20
+zooToken: 0xFa99bB4994833f177153f000867408019a521B5d
+zooKeeperFarming: 0x97f2eF8b39bc1DBbD93b49722420Dc0e2DbCbAEE
+------------------------------
+proxy admin: 0x03246a4BeDB7Af0A691fA52591bF3C21F486003E
+control admin: 0x71928387c8d507192c912b84a6efbf603fbfebaa
+dexSwapHarmony: 0x8C099E4f52Ef8C604D7D980B5F22720164b7A836
+dexSwapFarmingAddr: 0x1E49B5D2E0b97Ec8Faf7E0334646CC4eAce5928B
+dividerAddr: 0xb17839a03F724360e1105e8BEbBC51e60035f31e
+deployerAddr: 0x71928387c8d507192c912b84a6efbf603fbfebaa
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.28406952 ETH
+
+
+Summary
+=======
+> Total deployments:   9
+> Final cost:          0.28406952 ETH
+
+
+Done in 477.33s.
 ```
