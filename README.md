@@ -15,7 +15,7 @@ Boosting, NFT Factory and Marketplace are upgradable contracts, which facilitate
 
 # Harmony Mainnet Deploy
 
-**Todo: yarn d1**
+**Todo: yarn d1** || **Testnet: yarn a1 && a2 && a3**
 
 ```
 1_initial_migration.js
